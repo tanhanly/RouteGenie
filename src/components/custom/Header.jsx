@@ -83,7 +83,10 @@ function Header() {
     <DialogHeader>
       <DialogTitle>Sign In</DialogTitle> {/* Add this line */}
       <DialogDescription>
-        <img src="/logo.svg"/>
+        <div className="flex items-center justify-center">
+        <img src="/RouteGenie.jpg" className="h-[100px] w-[100px]" alt="RouteGenie" />
+         </div>
+
         <h2 className='font-bold text-lg mt-7'>Sign In with Google</h2>
         <p> Sign in to the App with Google authentication</p>
         <Button onClick={login} className="w-full mt-5 flex gap-4 items-center">
